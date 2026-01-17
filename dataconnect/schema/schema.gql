@@ -1,0 +1,46 @@
+type User @table {
+  email: String!
+  passwordHash: String!
+  createdAt: Timestamp!
+  partnerName: String
+  weddingDate: Date
+}
+
+type Invitation @table {
+  user: User
+  title: String!
+  weddingDate: Date!
+  weddingTime: String!
+  venueName: String!
+  createdAt: Timestamp!
+  accessLink: String!
+  description: String
+  dressCode: String
+  giftRegistryLink: String
+}
+
+type InvitationDesign @table {
+  invitation: Invitation
+  themeName: String!
+  fontFamily: String!
+  primaryColor: String!
+  backgroundColor: String
+  backgroundImageUrl: String
+}
+
+type Guest @table {
+  invitation: Invitation
+  name: String!
+  accessLink: String!
+  email: String
+  rsvpStatus: String
+  rsvpDate: Timestamp
+}
+
+type Media @table {
+  invitation: Invitation
+  url: String!
+  mediaType: String!
+  uploadedAt: Timestamp!
+  caption: String
+}

@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "ekad-kahwin"
+  },
+  "targets": {
+    "ekad-kahwin": {
+      "hosting": {
+        "walimatulurusfairusnissaiman": [
+          "walimatulurusfairusnissaiman"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
