@@ -2,10 +2,12 @@
 import { motion } from 'framer-motion';
 import RSVPForm from '@/components/RSVPForm';
 import Countdown from '@/components/Countdown'; 
+import AudioPlayer from '@/components/AudioPlayer';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FDFBF7] text-stone-800">
+      <AudioPlayer />
       {/* HERO SECTION */}
       <section className="h-screen flex flex-col items-center justify-center text-center p-4">
         <motion.div 
